@@ -22,9 +22,9 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async ({ view }) => {
   return view.render('layouts/index')
-})
+}).as('home')
 
 
 Route.get('/wiki', async ({ view }) => {
   return view.render('layouts/portfolio-details')
-})
+}).as('wiki')
